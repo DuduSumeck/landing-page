@@ -1,3 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background: tomato;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 2rem auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.2rem;
+}
+
+.logo {
+  color: #3a404e;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.list {
+  display: flex;
+  column-gap: 4rem;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.link {
+  color: #667085;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  background: #8e2424;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1rem 1.8rem;
 }
