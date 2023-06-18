@@ -146,3 +146,20 @@ a {
   line-height: 1.5;
   margin-bottom: 0;
 }
+
+.opportunity {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.opportunity span {
+  font-weight: 500;
+  background: rgba(142, 36, 36, 0.05);
+  border-radius: 16px;
+  padding: 0.4rem 1.2rem;
+}
+
+.opportunity img {
+  width: 100%;
+  margin-top: 4rem;
+}
