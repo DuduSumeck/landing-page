@@ -58,7 +58,7 @@ a {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 2rem auto;
 }
 
@@ -66,7 +66,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3.2rem;
 }
 
 .logo {
@@ -81,6 +80,12 @@ a {
 .logo img {
   width: 28px;
   height: 28px;
+}
+
+.logo span {
+  color: #3a404e;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .list {
@@ -112,7 +117,7 @@ a {
 
 .hero {
   text-align: center;
-  padding: 9.6rem 0;
+  margin: 9.6rem 0;
 }
 
 .hero span {
@@ -122,4 +127,22 @@ a {
 .hero p {
   max-width: 796px;
   margin: 0 auto;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+}
+
+.metrics__heading {
+  color: var(--accent-color);
+  font-size: 6rem;
+  margin: 0;
+}
+
+.metrics p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
