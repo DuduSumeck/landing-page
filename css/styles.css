@@ -1,4 +1,6 @@
 :root {
+  --background-color: #ffffff;
+  --body-color: #667085;
   --accent-color: #8e2424;
 }
 
@@ -13,8 +15,11 @@ html {
 }
 
 body {
+  background: var(--background-color);
   font-family: "Inter", sans-serif;
-  color: #667085;
+  color: var(--body-color);
+  margin: 0 auto;
+  width: 1440px;
 }
 
 h1,
@@ -49,12 +54,6 @@ p {
   line-height: 1.5;
 }
 
-span {
-  color: var(--accent-color);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
 a {
   text-decoration: none;
 }
@@ -62,22 +61,20 @@ a {
 .container {
   width: 1280px;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 3.2rem;
 }
 
 .logo {
-  color: #3a404e;
   display: flex;
   align-items: center;
   column-gap: 8px;
-  font-size: 1.8rem;
-  font-weight: 500;
 }
 
 .logo img {
@@ -93,13 +90,18 @@ a {
 
 .list {
   display: flex;
-  column-gap: 4rem;
+  gap: 3.2rem;
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list__item {
   padding: 1rem 0;
 }
 
 .link {
-  color: #667085;
+  color: var(--body-color);
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -107,28 +109,37 @@ a {
 .signin {
   display: flex;
   align-items: center;
-  column-gap: 2rem;
-  padding: 0 1.5rem;
+  gap: 1.2rem;
 }
 
 .btn {
-  background: var(--accent-color);
   border-radius: 8px;
-  color: #ffffff;
   padding: 1rem 1.8rem;
+}
+
+.btn--accent {
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  color: #ffffff;
 }
 
 .hero {
   text-align: center;
-  margin: 9.6rem 0;
+  padding: 9.6rem 0;
 }
 
-.hero span {
+.subheading {
+  color: var(--accent-color);
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
-.hero p {
-  width: 796px;
+.hero__heading {
+  margin: 2.4rem 0;
+}
+
+.hero__content {
+  width: 790px;
   margin: 0 auto;
 }
 
@@ -207,7 +218,7 @@ a {
 }
 
 .job__info span {
-  color: #667085;
+  color: var(--body-color);
 }
 
 .testimony {
@@ -241,7 +252,7 @@ a {
 }
 
 .author__job {
-  color: #667085;
+  color: var(--body-color);
   font-weight: 400;
   margin-top: 0.4rem;
 }
