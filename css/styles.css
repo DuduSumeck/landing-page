@@ -249,27 +249,50 @@ a {
   font-weight: 500;
 }
 
+.testimonies {
+  padding: 9.6rem;
+}
+
 .testimony {
   background: rgba(195, 25, 25, 0.03);
   border-radius: 16px;
-  margin-top: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
   padding: 6.4rem;
   text-align: center;
 }
 
-.testimony__quote {
-  font-weight: 500;
-  margin: 1.6rem 0 3.2rem;
+.testimony__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-.author__avatar {
+.quote {
+  color: #101828;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.testimony__author {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
   width: 56px;
   height: 56px;
 }
 
-.author__name,
-.author__job {
-  display: block;
+.author__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .author__name {
@@ -287,7 +310,6 @@ a {
 
 .footer {
   background: #f9fafb;
-  margin-top: 9.6rem;
   padding: 9.6rem 0;
   text-align: center;
 }
