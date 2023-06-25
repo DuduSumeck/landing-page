@@ -1,6 +1,7 @@
 :root {
   --background-color: #ffffff;
   --body-color: #667085;
+  --heading-color: #101828;
   --accent-color: #8e2424;
 }
 
@@ -26,7 +27,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #101828;
+  color: var(--heading-color);
 }
 
 h1,
@@ -270,7 +271,7 @@ a {
 }
 
 .quote {
-  color: #101828;
+  color: var(--heading-color);
   font-size: 3.6rem;
   font-weight: 500;
   line-height: 1.25;
@@ -296,7 +297,7 @@ a {
 }
 
 .author__name {
-  color: #101828;
+  color: var(--heading-color);
   font-size: 1.6rem;
   font-weight: 500;
   margin-top: 1.6rem;
